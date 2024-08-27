@@ -4,3 +4,4 @@ A simple application for controlling the gate and traffic light based on 3 senso
 - make sure docker is running and you have a postgres image running (keep the default port mapping)
 - docker build -t levelcrossapp_img .
 - docker run -d -p 8080:8080 --name=levelcrossapp_cont levelcrossapp_img
+- go to http://localhost:8080/api/sensor (you will be able to see the sensor status)
