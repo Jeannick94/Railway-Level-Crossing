@@ -7,3 +7,4 @@ A simple application for controlling the gate and traffic light based on 3 senso
 - go to http://localhost:8080/api/sensor (you will be able to see the sensor status)
 - to change the status of the sensors go to http://localhost:8080/api/sensor/3?value=true and change index and set the value to true or false.
 - for the left, middle, and right sensors the index is 1,2,3 respectively.
+- to see the train position and progression go to http://localhost:8080/api/controller/train
