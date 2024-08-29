@@ -3,6 +3,7 @@ package com.example.sensorapp.controllerstate;
 import com.example.sensorapp.sensor.Sensor;
 
 public class LightGateOperator {
+    //This class defines the input and output of the controller
     private Sensor sensor;
     private TrainPosition trainPosition;
 

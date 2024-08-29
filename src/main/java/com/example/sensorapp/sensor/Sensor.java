@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table
-public class Sensor {
+public class Sensor { //This class is charge of controlling the behavior of the three sensors
     @Id
     @SequenceGenerator(
             name = "sensor_sequence",

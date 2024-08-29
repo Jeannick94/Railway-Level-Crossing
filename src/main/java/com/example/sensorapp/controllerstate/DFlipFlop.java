@@ -1,14 +1,5 @@
 package com.example.sensorapp.controllerstate;
 
-import jakarta.persistence.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Objects;
-
 public class DFlipFlop {
     private Boolean d;
     private Boolean q;
