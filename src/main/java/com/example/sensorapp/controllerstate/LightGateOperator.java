@@ -1,27 +1,29 @@
 package com.example.sensorapp.controllerstate;
 
+import com.example.sensorapp.sensor.Sensor;
+
 public class LightGateOperator {
-    private DFlipFlop.Sensor sensor;
+    private Sensor sensor;
     private TrainPosition trainPosition;
 
     public LightGateOperator(TrainPosition trainPosition) {
         this.trainPosition = trainPosition;
     }
 
-    public LightGateOperator(DFlipFlop.Sensor sensor) {
+    public LightGateOperator(Sensor sensor) {
         this.sensor = sensor;
     }
 
-    public LightGateOperator(DFlipFlop.Sensor sensor, TrainPosition trainPosition) {
+    public LightGateOperator(Sensor sensor, TrainPosition trainPosition) {
         this.sensor = sensor;
         this.trainPosition = trainPosition;
     }
 
-    public DFlipFlop.Sensor getSensor() {
+    public Sensor getSensor() {
         return sensor;
     }
 
-    public void setSensor(DFlipFlop.Sensor sensor) {
+    public void setSensor(Sensor sensor) {
         this.sensor = sensor;
     }
 

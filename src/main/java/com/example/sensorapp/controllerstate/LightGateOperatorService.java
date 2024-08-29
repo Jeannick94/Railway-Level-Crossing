@@ -1,6 +1,8 @@
 package com.example.sensorapp.controllerstate;
 
 
+import com.example.sensorapp.sensor.Sensor;
+import com.example.sensorapp.sensor.SensorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,10 +21,10 @@ public class LightGateOperatorService {
 
 
     public List<Boolean> getStateOfSensors(){
-        List<DFlipFlop.Sensor> sensors1 = sensorRepository.findAll();
-        DFlipFlop.Sensor s1 = sensors1.get(0);
-        DFlipFlop.Sensor s2 = sensors1.get(1);
-        DFlipFlop.Sensor s3 = sensors1.get(2);
+        List<Sensor> sensors1 = sensorRepository.findAll();
+        Sensor s1 = sensors1.get(0);
+        Sensor s2 = sensors1.get(1);
+        Sensor s3 = sensors1.get(2);
 
         return List.of(s1.getValue().booleanValue(),s2.getValue().booleanValue(),s3.getValue().booleanValue());
     }
