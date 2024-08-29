@@ -14,6 +14,7 @@ import java.util.Optional;
 @Service
 public class SensorService {
 
+    //this class is the interface between the controller and the repository (db)
     private final SensorRepository sensorRepository;
 
 

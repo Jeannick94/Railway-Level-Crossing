@@ -12,6 +12,9 @@ import java.util.List;
 @Service
 public class LightGateOperatorService {
 
+    //this class is where the behaviors controlling the system are written,
+    // it checks whether both the previous state and the right transition are met in order to show current position of the train
+
     @Autowired
     private final SensorRepository sensorRepository;
 
@@ -42,6 +45,7 @@ public class LightGateOperatorService {
 
     public String getPreviousTrainPosition(int previousTrainPosition){
 
+        //this method is design to store all the state of the train from the moment the train is detected and output the previous position based on the current
         List<String> trainPositions = new ArrayList<>();
         trainPositions.add("AWAY");
         trainPositions.add("APPROACH");
@@ -88,6 +92,7 @@ public class LightGateOperatorService {
     }
 
     public TrainPosition getTrainPosition()  {
+        // This method checks whether both the previous state and the right transition are met in order to show current position of the train
         List<Boolean> sensors = getStateOfSensors();
         Boolean value1 = sensors.get(0);
         Boolean value2 = sensors.get(1);

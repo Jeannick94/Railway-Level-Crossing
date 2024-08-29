@@ -14,6 +14,7 @@ public class SensorConf {
     CommandLineRunner commandLineRunner(SensorRepository repository){
         return args -> {
 
+            // Default state of the sensors
             Sensor sensor_L = new Sensor(false,"Left");
             Sensor sensor_M = new Sensor(false,"Middle");
             Sensor sensor_R = new Sensor(false,"Right");

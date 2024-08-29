@@ -11,6 +11,7 @@ import java.util.List;
 @RequestMapping(path ="/api/controller")
 public class LightGateOperatorController {
 
+    //this class receives data from sensor and output the current position of the train
     @Autowired
     private final LightGateOperatorService lightGateOperatorService;
 

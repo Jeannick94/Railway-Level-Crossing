@@ -10,6 +10,7 @@ import java.util.Scanner;
 @RequestMapping(path = "api/sensor")
 public class SensorController {
 
+    // this class is in charge of communicating with the traffic light controller, it updates sensors value in the database.
     private final SensorService sensorService;
 
     @Autowired
