@@ -16,6 +16,5 @@ A simple application for controlling the gate and traffic light based on 3 senso
 - to see the train position and progression go to http://localhost:8080/api/controller/train
 
 ## Notice
-- we are still adding features.
 - If you encouter a problem, please reach out to us at jeannickumba94@gmail.com
 
