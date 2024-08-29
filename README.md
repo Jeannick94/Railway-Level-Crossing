@@ -1,7 +1,7 @@
 
 # Sensor-App
 
-A simple application for controlling the gate and traffic light based on 3 sensors located before, at, and after the cross-level to avoid collision between cars and train.
+A simple application for controlling the gate and traffic light based on 3 sensors located before, at, and after the cross-level to avoid collision between cars and train. This repository is in charge of the s
 
 ## How to Use
 
