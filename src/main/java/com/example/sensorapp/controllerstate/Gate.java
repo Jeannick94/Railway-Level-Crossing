@@ -48,24 +48,5 @@ public class Gate {
         return !clock;
     }
 
-    @Configuration
-    public static class SensorConf {
-        @Bean
-        CommandLineRunner commandLineRunner(SensorRepository repository){
-            return args -> {
 
-                DFlipFlop.Sensor sensor_L = new DFlipFlop.Sensor(false,"Left");
-                DFlipFlop.Sensor sensor_M = new DFlipFlop.Sensor(false,"Middle");
-                DFlipFlop.Sensor sensor_R = new DFlipFlop.Sensor(false,"Right");
-
-
-                repository.saveAll(List.of(sensor_L,sensor_M,sensor_R));
-
-
-
-            };
-
-        }
-
-    }
 }
