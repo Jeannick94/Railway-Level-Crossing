@@ -1,5 +1,5 @@
 
-# Railway-Level-Crossing
+# Sensor-App
 
 A simple application for controlling the gate and traffic light based on 3 sensors located before, at, and after the cross-level to avoid collision between cars and train. This system is made up of three components namely sensors, controller, and actuarors (trafffic light and gate). The controller is the brain of the system as it is in charge of coordinating the movement of the actuarors based on the state of the sensors and the previous known location of the train. Hence, this repository mainly focus on the controller. 
 
