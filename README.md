@@ -21,7 +21,3 @@ A simple application for controlling the gate and traffic light based on 3 senso
 - If you encouter a problem, please reach out to us at jeannickumba94@gmail.com
 
 
-## Feedback
-
-If you have any feedback, please reach out to us at jeannickumba94@gmail.com
-
